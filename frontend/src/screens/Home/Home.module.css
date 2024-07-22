@@ -1,0 +1,162 @@
+.home {
+  padding: 2rem 6rem 2rem 8rem;
+}
+
+.banner {
+  min-height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bannerContent > p,
+.aboutInfo > p,
+.latestEvents > p {
+  margin-bottom: 1rem;
+  font-size: 17px;
+  letter-spacing: 0.7rem;
+  font-weight: 700;
+}
+
+.bannerContent > h1,
+.aboutInfo > h1,
+.latestEvents > h1 {
+  font-size: 4.2rem;
+  line-height: 4rem;
+  background: linear-gradient(
+    90deg,
+    var(--olympic-blue),
+    var(--olympic-yellow)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bannerContent > button {
+  font-size: 16px;
+  margin-top: 1.5rem;
+}
+
+.bannerImg > img {
+  width: 30rem;
+}
+
+.about {
+  padding: 2rem 0;
+}
+
+.aboutContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2.5rem;
+}
+
+.aboutImg {
+  flex: 0.5;
+}
+
+.aboutImg > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.aboutInfo {
+  flex: 0.5;
+}
+
+.aboutInfo > p,
+.latestEvents > p {
+  margin-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.aboutInfo > p > span,
+.latestEvents > p > span {
+  height: 0.2rem;
+  background-color: var(--olympic-yellow);
+  width: 4rem;
+}
+
+.aboutInfo > h1,
+.latestEvents > h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  margin-top: 3rem;
+  padding: 0 2rem;
+}
+
+.quote > h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  /* background: url(../../images/logo.png); */
+  background-size: cover;
+  font-weight: 900;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.latestEvents {
+  margin-top: 5rem;
+}
+
+.latestEvents > button {
+  margin: 0 auto;
+  display: block;
+  margin-top: 3rem;
+  font-size: 20px;
+  border-radius: 0;
+  padding: 0.8rem 1.5rem;
+}
+
+.cards {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.cardImg {
+  position: relative;
+}
+
+.cardImg > img {
+  border-radius: 5px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+.cardImg > p {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  color: #f1f1f1;
+  font-size: 14px;
+  padding: 0.3rem 1rem;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.cardContent {
+  padding: 0.3rem;
+}
+
+.cardContent > h1 {
+  font-size: 25px;
+  margin-bottom: 2rem;
+}

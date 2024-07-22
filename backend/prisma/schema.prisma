@@ -1,0 +1,64 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            Int        @unique @default(autoincrement())
+  username      String
+  email         String     @unique
+  password      String
+  type          Roles      @default(PLAYER)
+  state         String?
+  game          Game?      @relation(fields: [games_id], references: [id])
+  games_id      Int?
+  flight_number String?
+  landing_time  DateTime?
+  hotel_info    HotelInfo? @relation(fields: [hotel_id], references: [id])
+  hotel_id      Int?
+}
+
+model Language {
+  id   Int    @unique @default(autoincrement())
+  name String
+}
+
+model Game {
+  id    Int        @unique @default(autoincrement())
+  name  String
+  desc  String
+  types GameType[]
+  user  User[]
+}
+
+model GameType {
+  id        Int    @unique @default(autoincrement())
+  game_type String
+  game      Game?  @relation(fields: [game_id], references: [id])
+  game_id   Int?
+}
+
+model HotelInfo {
+  id        Int      @unique @default(autoincrement())
+  name      String
+  address   String
+  check_in  DateTime
+  check_out DateTime
+  User      User[]
+}
+
+enum Roles {
+  PLAYER
+  ADMIN
+  SUPER_ADMIN
+}

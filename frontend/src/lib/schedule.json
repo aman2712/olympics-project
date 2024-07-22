@@ -1,0 +1,230 @@
+[
+  {
+    "event": "Archery",
+    "date": "July 23",
+    "time": "05:30 IST",
+    "description": "Women's Individual, Ranking Round"
+  },
+  {
+    "event": "Archery",
+    "date": "July 23",
+    "time": "09:30 IST",
+    "description": "Men's Individual, Ranking Round"
+  },
+  {
+    "event": "Archery",
+    "date": "July 24",
+    "time": "06:00 IST",
+    "description": "Mixed Team, 1/8 Eliminations, India vs Chinese Taipei"
+  },
+  {
+    "event": "Archery",
+    "date": "July 24",
+    "time": "06:19 IST",
+    "description": "Mixed Team, 1/8 Eliminations, China vs Great Britain"
+  },
+  {
+    "event": "Badminton",
+    "date": "July 24",
+    "time": "05:30 IST",
+    "description": "Mixed doubles, Group Play Stage, Group C - WATANABE Yuta/HIGASHINO Arisa vs CHRISTIANSEN Mathias/BOJE Alexandra"
+  },
+  {
+    "event": "Badminton",
+    "date": "July 24",
+    "time": "05:30 IST",
+    "description": "Women's doubles, Group Play Stage, Group A - POLII Greysia/RAHAYU Apriyani vs CHOW Mei Kuan/LEE Meng Yean"
+  },
+  {
+    "event": "Badminton",
+    "date": "July 24",
+    "time": "05:30 IST",
+    "description": "Women's singles, Group Play Stage, QI Xuefei vs NGUYEN Thuy Linh"
+  },
+  {
+    "event": "Badminton",
+    "date": "July 24",
+    "time": "06:10 IST",
+    "description": "Mixed doubles, Group Play Stage, Group B - ELLIS Marcus/SMITH Lauren vs GICQUEL Thom/DELRUE Delphine"
+  },
+  {
+    "event": "Basketball",
+    "date": "July 24",
+    "time": "06:45 IST",
+    "description": "Women's, Pool Round - ROC vs Japan"
+  },
+  {
+    "event": "Basketball",
+    "date": "July 24",
+    "time": "07:10 IST",
+    "description": "Women's, Pool Round - China vs Romania"
+  },
+  {
+    "event": "Basketball",
+    "date": "July 24",
+    "time": "08:05 IST",
+    "description": "Men's, Pool Round - Poland vs Latvia"
+  },
+  {
+    "event": "Basketball",
+    "date": "July 24",
+    "time": "08:30 IST",
+    "description": "Men's, Pool Round - China vs Serbia"
+  },
+  {
+    "event": "Boxing",
+    "date": "July 24",
+    "time": "07:30 IST",
+    "description": "Women's Feather (54-57kg), Preliminaries - Round of 32, SAKOBI MATSHU Marcelat vs PETECIO Nesthy"
+  },
+  {
+    "event": "Boxing",
+    "date": "July 24",
+    "time": "07:45 IST",
+    "description": "Women's Feather (54-57kg), Preliminaries - Round of 32, CACIC Nikolina vs RAMIREZ Yarisel"
+  },
+  {
+    "event": "Boxing",
+    "date": "July 24",
+    "time": "08:00 IST",
+    "description": "Women's Welter (64-69kg), Preliminaries - Round of 32, KOSZEWSKA Karolina vs YUNUSOVA Shakhnoza"
+  },
+  {
+    "event": "Boxing",
+    "date": "July 24",
+    "time": "08:18 IST",
+    "description": "Women's Welter (64-69kg), Preliminaries - Round of 32, DALGATOVA Saadat vs MANIKON Baison"
+  },
+  {
+    "event": "Cycling BMX Freestyle",
+    "date": "July 31",
+    "time": "06:40 IST",
+    "description": "Women's Park, Seeding"
+  },
+  {
+    "event": "Cycling BMX Freestyle",
+    "date": "July 31",
+    "time": "07:50 IST",
+    "description": "Men's Park, Seeding"
+  },
+  {
+    "event": "Cycling BMX Freestyle",
+    "date": "August 01",
+    "time": "06:40 IST",
+    "description": "Women's Park, Final"
+  },
+  {
+    "event": "Cycling BMX Freestyle",
+    "date": "August 01",
+    "time": "07:50 IST",
+    "description": "Men's Park, Final"
+  },
+  {
+    "event": "Cycling Track",
+    "date": "August 02",
+    "time": "12:00 IST",
+    "description": "Women's team sprint, Qualifying"
+  },
+  {
+    "event": "Cycling Track",
+    "date": "August 02",
+    "time": "12:24 IST",
+    "description": "Women's team Pursuit, Qualifying"
+  },
+  {
+    "event": "Cycling Track",
+    "date": "August 02",
+    "time": "13:20 IST",
+    "description": "Women's team sprint, First Round, Heat 1"
+  },
+  {
+    "event": "Cycling Track",
+    "date": "August 02",
+    "time": "13:23 IST",
+    "description": "Women's team sprint, First Round, Heat 2"
+  },
+  {
+    "event": "Fencing",
+    "date": "July 24",
+    "time": "05:30 IST",
+    "description": "Women's Épée Individual, Table of 64, LIN Yik Hei Coco vs ABDUL RAHMAN Kiria Tikanah"
+  },
+  {
+    "event": "Fencing",
+    "date": "July 24",
+    "time": "05:30 IST",
+    "description": "Women's Épée Individual, Table of 64, MURTAZAEVA Aizanat vs HSIEH Kaylin Sin Yan"
+  },
+  {
+    "event": "Fencing",
+    "date": "July 24",
+    "time": "06:00 IST",
+    "description": "Men's Sabre Individual, Table of 64, MAMUTOV Sherzod vs TEODOSIU Iulian"
+  },
+  {
+    "event": "Fencing",
+    "date": "July 24",
+    "time": "06:00 IST",
+    "description": "Men's Sabre Individual, Table of 64, SHIMAMURA Tomohiro vs MACKIEWICZ Andrew"
+  },
+  {
+    "event": "Judo",
+    "date": "July 24",
+    "time": "07:30 IST",
+    "description": "Women -48 kg, Elimination Round of 32, MILANI Francesca vs LIN Chen-Hao"
+  },
+  {
+    "event": "Judo",
+    "date": "July 24",
+    "time": "07:30 IST",
+    "description": "Women -48 kg, Elimination Round of 32, PARETO Paula vs WHITEBOOI Geronay"
+  },
+  {
+    "event": "Judo",
+    "date": "July 24",
+    "time": "07:30 IST",
+    "description": "Women -48 kg, Elimination Round of 32, RISHONY Shira vs ALVAREZ Luz"
+  },
+  {
+    "event": "Judo",
+    "date": "July 24",
+    "time": "07:30 IST",
+    "description": "Women -48 kg, Quarterfinal"
+  },
+  {
+    "event": "Karate",
+    "date": "August 05",
+    "time": "07:10 IST",
+    "description": "Women's Kata, Elimination Round, Pool A"
+  },
+  {
+    "event": "Karate",
+    "date": "August 05",
+    "time": "07:30 IST",
+    "description": "Women's Kata, Elimination Round, Pool B"
+  },
+  {
+    "event": "Karate",
+    "date": "August 05",
+    "time": "07:55 IST",
+    "description": "Women's Kata, Ranking Round, Pool A"
+  },
+  {
+    "event": "Karate",
+    "date": "August 05",
+    "time": "08:07 IST",
+    "description": "Women's Kata, Ranking Round, Pool B"
+  },
+  {
+    "event": "Sailing",
+    "date": "July 25",
+    "time": "08:35 IST",
+    "description": "Men's Windsurfer - RS:X , Race 01"
+  },
+  {
+    "event": "Sailing",
+    "date": "July 25",
+    "time": "08:35 IST",
+    "description": "Men's Windsurfer - RS:X , Race 02"
+  }
+]

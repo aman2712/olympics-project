@@ -1,0 +1,69 @@
+.footer {
+  background-color: #1e303f;
+  padding: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLogo > img {
+  width: 20rem;
+}
+
+.footerLogo > p {
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.footerContent {
+  flex: 0.7;
+}
+
+.footerAbout {
+  color: #c5c4c4;
+  margin-top: 1rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.footerLinks > a {
+  text-decoration: none;
+  color: #aaa8a8;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerLinks > a:hover {
+  color: #f1f1f1;
+}
+
+.copyright {
+  background-color: #141f29;
+  color: #aaa8a8;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 8rem;
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footerIcons > svg {
+  font-size: 1.3rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footerIcons > svg:hover {
+  color: #f1f1f1;
+}

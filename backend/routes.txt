@@ -1,0 +1,10 @@
+POST /api/users - register user ( admin ) - DONE
+POST /api/users/login - login user - DONE
+GET /api/games - get list of games - DONE
+GET /api/games/:id - get details of single game - DONE
+PUT /api/players/add-info - add details of travel ( flight number and landing time, state and game ) by player - DONE
+POST /api/hotels - add a hotel ( admin ) - DONE
+PUT /api/hotels/info - add details of stay of player ( admin ) - DONE
+GET /api/users/:id - get all details of a player including hotel details - DONE
+GET /api/users/super - get details of all users and players ( super admin ) - DONE
+GET /api/misc/lang - get list of supported languages - DONE

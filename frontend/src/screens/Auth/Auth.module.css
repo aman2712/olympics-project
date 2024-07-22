@@ -1,0 +1,69 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vmin;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0) 20%
+    ),
+    url(../../images/about-img.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.authForm {
+  flex: 0.3;
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 2rem;
+  background-color: white;
+}
+
+.authTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  margin: 1rem 0;
+}
+
+.formInput > label {
+  color: gray;
+  font-size: 14px;
+}
+
+.formInput > input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0.5rem 0.3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 0.2rem;
+}
+
+.authForm > button {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.bottomText > span {
+  color: var(--olympic-yellow);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bottomText > span:hover {
+  color: #d3b403;
+}

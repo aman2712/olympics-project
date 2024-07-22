@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+}
+
+.logo > img {
+  width: 7rem;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.navLinks > a {
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+
+.navLinks > a > span {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #ffd700;
+  transform: translateX(-100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.navLinks > a:hover > span {
+  transform: translateX(0);
+}

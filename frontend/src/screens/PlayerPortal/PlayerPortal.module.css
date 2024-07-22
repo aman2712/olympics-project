@@ -1,0 +1,102 @@
+.portal {
+  padding: 2rem 6rem 2rem 8rem;
+  background-image: url(../../images/about-img.jpg);
+}
+
+.portal > h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.portal > p {
+  margin-bottom: 5rem;
+  max-width: 64vw;
+  color: rgb(255, 255, 255);
+}
+
+.portal > h2 {
+  margin-bottom: 2rem;
+}
+
+.portalContent {
+  display: flex;
+  gap: 6rem;
+  padding: 3rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(15px);
+  border-radius: 0.3rem;
+}
+
+.portalContent > .sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.sidebar {
+  min-height: 20rem;
+  border-right: 2px solid black;
+  padding-right: 2rem;
+  min-width: 15rem;
+}
+
+.sidebar > .link {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+}
+
+.sidebar > .link:hover {
+  color: var(--olympic-yellow);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 2rem;
+  background-color: white;
+  min-width: 25rem;
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  margin: 1rem 0;
+}
+
+.formInput > label {
+  color: gray;
+  font-size: 14px;
+}
+
+.formInput > input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0.5rem 0.3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 0.2rem;
+}
+
+.form > button {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
