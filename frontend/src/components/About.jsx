@@ -3,7 +3,7 @@ import aboutImg from "../images/about-img.jpg";
 
 const About = () => {
   return (
-    <section className={classes.about}>
+    <section className={classes.about} id="about">
       <div className={classes.aboutContent}>
         <div className={classes.aboutImg}>
           <img src={aboutImg} alt="about" />

@@ -1,21 +1,16 @@
 .portal {
   padding: 2rem 6rem 2rem 8rem;
-  background-image: url(../../images/about-img.jpg);
 }
 
 .portal > h1 {
   font-size: 4rem;
-  color: white;
+  color: var(--olympic-red);
 }
 
 .portal > p {
-  margin-bottom: 5rem;
-  max-width: 64vw;
-  color: rgb(255, 255, 255);
-}
-
-.portal > h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  max-width: 60vw;
+  color: rgba(113, 113, 113);
 }
 
 .portalContent {
@@ -52,7 +47,7 @@
 }
 
 .sidebar > .link:hover {
-  color: var(--olympic-yellow);
+  color: var(--olympic-red);
 }
 
 .main {
@@ -83,7 +78,8 @@
   font-size: 14px;
 }
 
-.formInput > input {
+.formInput > input,
+.formInput > select {
   display: block;
   width: 100%;
   background: transparent;

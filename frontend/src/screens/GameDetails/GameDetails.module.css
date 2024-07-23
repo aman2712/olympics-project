@@ -1,0 +1,63 @@
+.game {
+  padding: 2rem 6rem 2rem 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game > a {
+  text-decoration: none;
+  align-self: flex-start;
+  color: rgb(113, 113, 113);
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+.game > a:hover {
+  color: black;
+}
+
+.gameHeader {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.gameHeader > img {
+  width: 30rem;
+  height: 20rem;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+.gameHeader > div > h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--olympic-red);
+}
+
+.gameHeader > div > p {
+  color: rgb(113, 113, 113);
+  font-size: 1.2rem;
+}
+
+.typeHeading {
+  font-size: 1rem !important;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.types {
+  display: flex;
+  gap: 1rem;
+  color: rgb(113, 113, 113);
+}
+
+.game > p {
+  max-width: 90ch;
+}
