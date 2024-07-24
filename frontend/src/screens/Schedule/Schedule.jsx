@@ -1,11 +1,12 @@
 import classes from "./Schedule.module.css";
-import schedule from "../../lib/schedule.json";
-import countries from "../../lib/countries.json";
 import EventsList from "../../components/EventsList";
+import { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 
 const Schedule = () => {
-  const dataHeader = ["Event", "Date", "Time", "Description"];
-  const countriesHeader = ["Country", "Players", "Ranking"];
+  const { events, gamePlayers } = useContext(AppContext);
+  const dataHeader = ["Event", "Date", "Start Time", "End Time", "Description"];
+  const countriesHeader = ["Game", "Players"];
   return (
     <div className={classes.schedule}>
       <div className={classes.scheduleHeader}>
@@ -16,10 +17,10 @@ const Schedule = () => {
       </div>
       <div className={classes.scheduleContent}>
         <div className={classes.games}>
-          <EventsList data={schedule} dataHeader={dataHeader} />
+          <EventsList data={events} dataHeader={dataHeader} />
         </div>
         <div className={classes.countries}>
-          <EventsList data={countries} dataHeader={countriesHeader} />
+          <EventsList data={gamePlayers} dataHeader={countriesHeader} />
         </div>
       </div>
     </div>

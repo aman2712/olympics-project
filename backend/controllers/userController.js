@@ -83,6 +83,9 @@ export const login = async (req, res) => {
       where: {
         email,
       },
+      include: {
+        game: true,
+      },
     });
 
     if (!user) {

@@ -24,9 +24,14 @@ const Navbar = () => {
         <Link to="/games-list">
           Games <span></span>
         </Link>
-        <Link to="/support">
-          Support <span></span>
+        <Link to="/schedule">
+          Game Schedule <span></span>
         </Link>
+        {user && (user.type === "ADMIN" || user.type === "SUPER_ADMIN") && (
+          <Link to="/admin-dashboard">
+            Admin Dashboard <span></span>
+          </Link>
+        )}
       </div>
       {user ? (
         <Link to="/player-portal">

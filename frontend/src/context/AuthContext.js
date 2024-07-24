@@ -4,7 +4,7 @@ import apiCall from "../utils/api-call";
 export const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState();
 
   useEffect(() => {
     const existingUser = localStorage.getItem("user")
@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
     });
 
     if (!resp.error) {
-      setUser(resp);
+      setUser(resp.data.data);
       localStorage.setItem("user", JSON.stringify(resp.data.data));
     }
     return resp;
@@ -37,16 +37,22 @@ export const AuthProvider = ({ children }) => {
     console.log(resp);
 
     if (!resp.error) {
-      setUser(resp);
+      setUser(resp.data.data);
       localStorage.setItem("user", JSON.stringify(resp.data.data));
     }
     return resp;
+  };
+
+  const logout = () => {
+    setUser();
+    localStorage.removeItem("user");
   };
 
   const value = {
     user,
     register,
     login,
+    logout,
   };
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 };

@@ -1,14 +1,14 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import classes from "./PlayerPortal.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 import { AuthContext } from "../../context/AuthContext";
 import Message from "../../components/Message";
 
 const PlayerPortal = () => {
   const { games, updatePlayerData } = useContext(AppContext);
-  const { user } = useContext(AuthContext);
-  const [message, setMessage] = useState("");
+  const { user, logout } = useContext(AuthContext);
+  const [message, setMessage] = useState({ type: "error", text: "" });
   const [data, setData] = useState({
     flight_number: "",
     landing_time: "",
@@ -16,12 +16,18 @@ const PlayerPortal = () => {
     game: "1",
   });
 
+  const navigate = useNavigate();
+
   async function handleSubmit() {
-    setMessage("");
+    setMessage({ type: "error", text: "" });
     const resp = await updatePlayerData(data);
     if (resp.error) {
-      setMessage(resp.data.message);
+      setMessage({ type: "error", text: resp.data.message });
     } else {
+      setMessage({
+        type: "success",
+        text: "Your info was successfully added!",
+      });
       setData({
         flight_number: "",
         landing_time: "",
@@ -30,6 +36,14 @@ const PlayerPortal = () => {
       });
     }
   }
+
+  console.log(user);
+
+  useEffect(() => {
+    if (!user) {
+      navigate("/auth");
+    }
+  }, [user]);
 
   return (
     <div className={classes.portal}>
@@ -40,14 +54,22 @@ const PlayerPortal = () => {
         need some information from you to arrange for your travel and
         accomodation in Paris
       </p>
+      {user?.game?.name ? (
+        <>
+          <h2>Your assigned game is {user?.game?.name}</h2>
+          <p>{user?.game?.desc}</p>
+        </>
+      ) : (
+        <h2>You have not been assigned a game yet</h2>
+      )}
       <div className={classes.portalContent}>
         <div className={classes.sidebar}>
           <Link to="/" className={classes.link}>
             Accomodation
           </Link>
-          <Link to="/" className={classes.link}>
+          <a href="#" className={classes.link} onClick={logout}>
             Logout
-          </Link>
+          </a>
           <Link to="/" className={classes.link}>
             Your profile
           </Link>
@@ -55,10 +77,11 @@ const PlayerPortal = () => {
             Settings
           </Link>
         </div>
+
         <div className={classes.main}>
           <div className={classes.form}>
             <h1 className={classes.formTitle}>Travel Info</h1>
-            <Message text={message} />
+            <Message type={message.type} text={message.text} />
             <div className={classes.formInput}>
               <label htmlFor="flight-number">Flight Number: </label>
               <input

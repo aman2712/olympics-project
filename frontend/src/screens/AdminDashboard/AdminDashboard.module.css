@@ -1,0 +1,134 @@
+.admin {
+  padding: 2rem 6rem 2rem 8rem;
+}
+
+.admin > h1 {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  color: var(--olympic-red);
+}
+
+.hotel_info {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.hotels_list {
+  flex: 0.3;
+}
+
+.hotel_details {
+  margin-bottom: 2rem;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hotel_details > h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  transition: all 0.3s linear;
+}
+
+.hotel_details > p {
+  color: rgb(61, 61, 61);
+}
+
+.address {
+  margin-bottom: 0.5rem;
+}
+
+.hotel_details > span {
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--olympic-yellow);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s all linear;
+}
+
+.hotel_details:hover > span {
+  transform: translateX(-50%) scale(10);
+}
+
+.hotel_details:hover > h3 {
+  font-weight: 700;
+  color: var(--olympic-red);
+}
+
+.hotel_details:hover > p {
+  color: black;
+}
+
+.form_wrapper {
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form {
+  border: 2px solid black;
+  border-radius: 7px;
+  padding: 2rem;
+  background-color: white;
+  min-width: 25rem;
+  height: max-content;
+}
+
+.formTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  margin: 1rem 0;
+}
+
+.formInput > label {
+  color: gray;
+  font-size: 14px;
+}
+
+.formInput > input,
+.formInput > select {
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 0.5rem 0.3rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  margin-top: 0.2rem;
+}
+
+.form > button {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.playersTable {
+  border-collapse: collapse;
+}
+
+.tableHead > tr > th {
+  background-color: var(--olympic-yellow);
+}
+
+.tableHead > tr > th,
+.tableBody > tr > td {
+  padding: 20px;
+  border: 2px solid black;
+}

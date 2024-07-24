@@ -15,9 +15,13 @@ const EventsList = ({ data, dataHeader }) => {
         <tbody className={classes.tableBody}>
           {data.map((item, index) => (
             <tr key={index}>
-              {Object.entries(item).map(([key, value]) => (
-                <td>{value}</td>
-              ))}
+              {Object.entries(item).map(([key, value]) => {
+                if (key === "game") {
+                  return <td>{value?.name}</td>;
+                } else {
+                  return <td>{value}</td>;
+                }
+              })}
             </tr>
           ))}
         </tbody>

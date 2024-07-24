@@ -15,8 +15,8 @@ const GameDetails = () => {
   const { id } = useParams();
 
   const findGame = () => {
-    const game = games.find((game) => game.id == id);
-    setGame(game);
+    const foundGame = games.find((game) => game.id == id);
+    setGame(foundGame);
   };
 
   useEffect(() => {

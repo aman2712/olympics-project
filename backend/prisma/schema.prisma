@@ -39,6 +39,7 @@ model Game {
   desc  String
   types GameType[]
   user  User[]
+  Event Event[]
 }
 
 model GameType {
@@ -49,12 +50,22 @@ model GameType {
 }
 
 model HotelInfo {
-  id        Int      @unique @default(autoincrement())
+  id        Int    @unique @default(autoincrement())
   name      String
   address   String
-  check_in  DateTime
-  check_out DateTime
+  check_in  String
+  check_out String
   User      User[]
+}
+
+model Event {
+  id          Int    @unique @default(autoincrement())
+  game        Game   @relation(fields: [game_id], references: [id])
+  game_id     Int
+  date        String
+  time        String
+  time_end    String @default("7:30 PM")
+  description String
 }
 
 enum Roles {

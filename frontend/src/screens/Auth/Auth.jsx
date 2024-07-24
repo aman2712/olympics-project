@@ -37,6 +37,7 @@ const Auth = () => {
 
   useEffect(() => {
     if (user) {
+      console.log(user);
       navigate("/");
     }
   }, [user]);
